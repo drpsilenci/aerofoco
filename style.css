@@ -1,0 +1,236 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+*{
+padding: 0px;
+margin:0px;
+box-sizing: border-box;
+overflow-x: hidden;
+font-family: "sigmar",serif;
+}
+    html{
+scroll-behavior: smooth;
+
+    }
+
+    header{
+padding: 15px 0px ;/*define uma margin*/
+position: fixed; /*define uma possição fixa*/
+width: 100%;/*define uma largura*/
+z-index: 9999;/*define a camada deixando ele na frente ou atras de outra camada*/
+background-color: darkblue;
+
+    }
+
+    header nav ul{
+        list-style: none;
+        text-align: center;/*define o texto alinhado no centro*/
+    }
+
+    header nav ul li{
+display: inline;
+
+    }
+
+    header nav ul li a{
+text-decoration: none;
+    text-transform: uppercase;
+    color:white;/*define uma cor*/
+    padding: 2px 10px;/*define o espaçamento*/
+    font-family: Arial, Helvetica, sans-serif;/*define o tipo de letra*/
+    display: inline-block;/*define a programação em bloco*/
+    /*border: 1px solid black; (colocar borda em volta das opções*/
+    }
+
+    header nav ul li a:hover {
+        color:cornflowerblue;/*define uma cor*/
+    }
+
+    section{
+width: 100%; /*define a largura*/
+height: 500px;/*define altura*/
+border: 1px solid black;/*configura a cor e a espesura de uma borda*/
+    }
+    
+    section,footer{
+        padding-top: 60px;/*alinhamento de parte superior*/
+        padding-bottom: 60px;/*alinhamento da parte inferior*/
+
+    }
+
+    section:nth-child(even){
+        background-color: #3c4f60;/*define as cores de fundo dos numeros impares*/
+        color: white;
+
+    }
+
+    section:nth-child(odd){
+        background-color: aliceblue;/*define as cores de fundo dos numeros pares*/
+
+    }
+
+    .banner {
+        display:flex;  /* ajuste de acordo com a disposição do espaço*/
+        align-items: center;  /* alinha  na vertical*/
+        justify-content: center;  /* alinha  na horizontal*/
+
+    }
+
+    .banner img{
+        width: 45%; /*define a largura*/
+        height: 100%;/*define a altura*/
+        text-align: center;
+        
+
+    }
+
+    .borda0{
+        border: none;/* define como nenhuma borda*/
+
+
+    }
+
+    .borda1{
+        border: 1px solid black;/*define a cor e a espesura da borda*/
+    }
+
+
+    .borda2{
+        border: 1px solid #3c4f60;/*define a cor e a espesura da borda*/
+
+    }
+
+    .flexivel{
+        display: flex;/*ajusta de acordo com o espaço disponivel*/
+        flex-direction: row;/*deixa alinhado*/
+        justify-content: space-between /*espaço disponível*/; 
+
+       /* overflow-y: hidden;*/
+    }
+
+    article{
+        width: 100%;/* define a largura*/
+        text-align: center;/* define o texto no centro*/
+    }
+
+    .conteinercursos{
+        justify-content: space-around;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
+    .mini {
+        width: 49%;
+        padding:10px ;
+        cursor: pointer;
+    
+
+    }
+
+    .parallax{
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .p1{
+        background-image: url(./img/fundo1-0.jpg);/* define uma imagem de fundo*/
+    }
+    .p2{
+        background-image: url(./img/fundo\ 3.jpg);
+
+    }
+    
+    /* Alinha o texto ao centro */
+    .sobre{
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+    /*modal*/
+    .janelaModal{
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        padding-top: 200px;
+        z-index: 99999;
+        background-color: rgba(0,0,10, 0.8);
+        text-align: center;
+        
+    }
+
+    .mostraJanelaModal{
+        display: block;
+    }
+
+    .escondeJanelaModal{
+    display: none;
+    }
+
+    .fecharModal{
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        cursor: pointer;
+    }
+
+    .igmModal{
+        margin: auto;
+        display: block;
+        width: 100%;
+        max-width: 600px;
+
+
+        
+    }
+
+    .txtModal{
+            margin: auto;
+            margin-top: 20px;
+            display: block;
+            width:80% ;
+            text-align: center;
+            color: #ccc;
+            position: 10px 0px;
+            height: 150px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+    }
+
+    .botao-saber-mais {
+        background-color: #ff0000; /* Cor vermelha */
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        border-radius: 5px;
+        display: inline-block;
+    }
+
+    .botao-saber-mais:hover {
+        background-color: #cc0000; /* Tom mais escuro de vermelho quando passar o mouse */
+    }
+    
+    .fotos{
+        width:100%;
+        height:750px;
+        
+
+    }
+
+    .mini1 {
+        width: 49%;
+        padding:10px ;
+        cursor: pointer;
+        border-radius: 25px;
+
+    }
+    
